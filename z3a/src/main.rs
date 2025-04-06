@@ -20,7 +20,7 @@ fn sort(a: &mut i32, b: &mut i32, c: & mut i32){
 //z4
 fn swap_arr<T>(arr: &mut [T], i: usize, j: usize) {
     if i != j && i < arr.len() && j < arr.len() {
-        swap(&mut arr[i], &mut arr[j]);
+        arr.swap(i, j);
     }
 }
 
