@@ -110,6 +110,18 @@ fn suma(mut num : i32) -> i32{
     }
     suma
 }
+//z9
+fn trojki(n: usize) {
+    for a in 1..n {
+        for b in a+1..n {
+            for c in b+1..=n {
+                if a * a + b * b == c * c {
+                    println!("({}, {}, {})", a, b, c);
+                }
+            }
+        }
+    }
+}
 
 fn main(){
 
@@ -120,7 +132,7 @@ fn main(){
     //println!("{}",c_na_f(30.0));
     //println!("{}", dni);
     //println!("{}", silnia(6));
-    println!("{}", suma(-12345));
-
+    //println!("{}", suma(-12345));
+    trojki(80);
     //cyfry(-3672);
 }
